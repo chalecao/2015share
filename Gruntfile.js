@@ -1,6 +1,6 @@
 /* global module:false */
 module.exports = function(grunt) {
-	var port = grunt.option('port') || 8000;
+	var port = grunt.option('port') || 8100;
 	var base = grunt.option('base') || '.';
 
 	// Project configuration
@@ -94,7 +94,7 @@ module.exports = function(grunt) {
 				options: {
 					port: port,
 					base: base,
-					livereload: true,
+					livereload: false,
 					open: true
 				}
 			}
@@ -114,7 +114,7 @@ module.exports = function(grunt) {
 
 		watch: {
 			options: {
-				livereload: true
+				livereload: false
 			},
 			js: {
 				files: [ 'Gruntfile.js', 'js/reveal.js' ],

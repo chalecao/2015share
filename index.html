@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js – The HTML Presentation Framework</title>
+		<title>网易教育产品部前端周会分享</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -15,7 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="css/theme/blood.css" id="theme">
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -41,337 +41,190 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Reveal.js</h1>
-					<h3>The HTML Presentation Framework</h3>
+					<br/><br/>
+					<h1>常见Bug总结技术分享</h1>
+					<br/>
+					<h3>网易教育产品部前端周会</h3>
+					<br/>
 					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+						<small>前端开发工程师<a href="http://haomou.net">曹欢欢</a> （ <a href="mailto:ch19900606@gmail.com">ch19900606@gmail.com</a>）</small>
 					</p>
 				</section>
 
 				<section>
-					<h2>Hello There</h2>
-					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
+					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+						&ldquo;如果你交给某人一个程序，你将折磨他一整天；如果你教某人如何编写程序，你将折磨他一辈子。&rdquo;
+					</blockquote>
+					<a href="#" class="fragment">
+						<img width="550" height="300" data-src="img/us.jpg" alt="Down arrow">
+					</a>
 				</section>
 
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
-
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
-
-				<section>
-					<h2>Touch Optimized</h2>
-					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-					</p>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=slide#/transitions">Slide</a> -
-						<a href="?transition=convex#/transitions">Convex</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						reveal.js comes with a few themes built in: <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-					</p>
-				</section>
-
-				<section>
-					<section data-background="#dddddd">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code class="hljs">&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Tiled Backgrounds</h2>
-						<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-							<h2>Video Backgrounds</h2>
-							<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-						</div>
-					</section>
-					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
-						<h2>... and GIFs!</h2>
-					</section>
-				</section>
-
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-					</p>
-					<pre><code class="hljs">Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-				</section>
-
-				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						You can override background transitions per-slide.
-					</p>
-					<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
-				</section>
-
-				<section>
-					<h2>Pretty Code</h2>
+				<section data-transition="slide"  >
+					<h2>ftl模板</h2>
 					<pre><code class="hljs" data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
+//ftl模板，?html存在bug
+//存在的地方比较多，bug可能还未出现
+<#if webUser.nickName?exists>nickName:"${webUser.nickName?html?js_string}"...
 					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
+					<br/>
+					<p class="fragment" >
+						当字符串含有<a>\r或\n</a>时，使用<a>?html</a>会出现换行，如果包裹在js代码中，会导致代码执行不正常。
+					</p>
+
+				</section>
+				<section data-transition="slide"  >
+					<h2>坑爹的坑</h2>
+					<pre><code class="hljs" data-trim contenteditable>
+<img datasrc="_imgUrl_" alt="_productName_">
+<img data-src="_imgUrl_" alt="_productName_">
+0.39 * 10 = ？
+0.59 * 10 = ？
+0.69 * 10 = ？
+					</code></pre>
+					<br/>
+					<p class="fragment" >
+						在ie下，会自动整理属性，把<a>datasrc</a>属性，改成了<a>dataSrc</a>
+					</p>
+					<p class="fragment" >0.39 * 10 = <a><span class="fragment" id="3910"><script>document.getElementById("3910").innerHTML = 0.39 * 10;</script></span></a></p>
+					<p class="fragment" >0.59 * 10 = <a><span class="fragment" id="5910"><script>document.getElementById("5910").innerHTML = 0.59 * 10;</script></span></a></p>
+					<p class="fragment" >0.69 * 10 = <a><span class="fragment" id="6910"><script>document.getElementById("6910").innerHTML = 0.69 * 10;</script></span></a></p>
+				</section>
+
+				<section data-transition="slide"  >
+					<h2>语法兼容性</h2>
+					<pre><code class="hljs" data-trim contenteditable>
+//时间初始化
+new Date("2015-10-30 23:59:59")
+//有问题吗？
+					</code></pre>
+					<pre class="fragment"><code class="hljs" data-trim contenteditable>
+//标准方法
+var _date = new Date()
+_date.setYear(2015);
+_date.setMonth(10);
+...
+					</code></pre>
+					<p class="fragment" >
+						IE7以下 不支持<a >display:inline-block</a>
+					</p>
+					<p class="fragment" >
+						IE8 不支持<a >element.insertBefore()</a>，其他浏览器支持的
+					</p>
+					<p class="fragment" >
+						手机浏览器 不支持<a >outerHTML </a> 属性及其操作
+					</p>
 				</section>
 
 				<section>
-					<h2>Marvelous List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
+					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+						&ldquo;送人玫瑰，授之以渔&rdquo;
+					</blockquote>
+					<a href="#" class="fragment">
+						<img width="500" height="355" data-src="img/miji.jpg" >
+					</a>
+				</section>
+				<section>
+						<h2>定位BUG</h2>
+						<ol>
+							<li class="fragment" >复现问题，初步定位</li>
+							<li class="fragment" >查看<a >URL</a>，寻找模块</li>
+
+						</ol>
+				</section>
+				<section>
+						<img width="900" height="500" data-src="img/url.jpg" alt="Down arrow">
+				</section>
+				<section>
+						<h2>定位BUG</h2>
+						<ol>
+							<li>复现问题，初步定位</li>
+							<li >查看<a href="#/7">URL</a>，寻找模块</li>
+							<li >查找<a >umiUtil.js</a></li>
+
+						</ol>
+				</section>
+				<section>
+					<img width="900" height="500" data-src="img/umi.jpg" alt="Down arrow">
 				</section>
 
 				<section>
-					<h2>Fantastic Ordered List</h2>
+					<h2>定位BUG</h2>
 					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
+						<li>复现问题，初步定位</li>
+						<li >查看<a href="#/7">URL</a>，寻找模块</li>
+						<li >查找<a >umiUtil.js</a></li>
+						<li >全局搜索<a >ctrl+h</a>（不同编辑器有所不同）</li>
+
+					</ol>
+				</section>
+				<section>
+					<img width="900" height="500" data-src="img/over.jpg" alt="Down arrow">
+				</section>
+				<section>
+					<h2>定位BUG</h2>
+					<ol>
+						<li>复现问题，初步定位</li>
+						<li >查看<a href="#/7">URL</a>，寻找模块</li>
+						<li >查找<a >umiUtil.js</a></li>
+						<li >全局搜索<a >ctrl+h</a>（不同编辑器有所不同）</li>
+						<li class="fragment">页面调试，打断点</li>
+
+					</ol>
+				</section>
+				<section>
+					<h2>打包后的BUG</h2>
+					<p class="fragment">
+						最恶心的线上bug，打包后，没法分析
+					</p>
+					<ol>
+						<li class="fragment">定位代码位置（core.js 还是？）</li>
+						<li class="fragment">全局打断点定位</li>
+						<li class="fragment"><a>定位不到？？？</a></li>
+						<li class="fragment">格式化core.js（假设确定在core里）</li>
+						<li class="fragment">根据<a>关键字</a>定位代码片段</li>
+						<li class="fragment">在代码片段上打断点</li>
+						<li class="fragment">调试数据分析</li>
+						<li class="fragment"><a>还不行？？？</a><a class="fragment">放弃吧？？？</a><a class="fragment">找高手？？？</a></li>
+					</ol>
+				</section>
+				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+					<h2>整个世界安静了</h2>
+					<p class="fragment">
+						开始拉分支，修改bug吧，这个过程可能比较漫长，要有信心
+					</p>
+				</section>
+
+
+				<section data-transition="slide">
+					<h2>页面自动刷新插件hmreload</h2>
+					<p class="fragment">
+						还为页面刷新而烦恼吗？
+					</p>
+					<p class="fragment">
+						喜欢所编即所见的效果吗？
+					</p>
+				</section>
+				<section>
+					<h2>试试hmreload吧</h2>
+					<p class="fragment">
+						人世间有百媚千红，我独爱这一种...
+					</p>
+					<ol>
+						<li class="fragment">安装浏览器<a href="https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei">插件</a></li>
+						<li class="fragment">npm install hmreload</li>
+						<li class="fragment">hmreload (监听目录)</li>
+						<li class="fragment">开启双屏，OK啦！！！</li>
 					</ol>
 				</section>
 
-				<section>
-					<h2>Tabular Tables</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Item</th>
-								<th>Value</th>
-								<th>Quantity</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Apples</td>
-								<td>$1</td>
-								<td>7</td>
-							</tr>
-							<tr>
-								<td>Lemonade</td>
-								<td>$2</td>
-								<td>18</td>
-							</tr>
-							<tr>
-								<td>Bread</td>
-								<td>$3</td>
-								<td>2</td>
-							</tr>
-						</tbody>
-					</table>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
-
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe src="https://www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-				</section>
-
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the page background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-					</p>
-				</section>
-
-				<section>
-					<h2>Much more</h2>
-					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
-					</ul>
-				</section>
 
 				<section style="text-align: left;">
-					<h1>THE END</h1>
+					<h1>Thank You</h1>
 					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
+						- <a href="https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei">chrome plugin</a><br>
+						- <a href="https://github.com/chalecao/nej-livereload">https://github.com/chalecao/nej-livereload</a> <br>
+						- <a >《欢欢出品，必属精品》</a>
 					</p>
 				</section>
 
@@ -392,7 +245,7 @@ Reveal.addEventListener( 'customevent', function() {
 				history: true,
 				center: true,
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				transition: 'zoom', // none/fade/slide/convex/concave/zoom
 
 				// Optional reveal.js plugins
 				dependencies: [
